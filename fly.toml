@@ -3,13 +3,10 @@
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = "unboundtest"
-primary_region = "sea"
+app = "unbound19test"
+primary_region = "yyz"
 kill_signal = "SIGINT"
 kill_timeout = "5s"
-
-[build]
-  image = "ghcr.io/jsha/unboundtest/latest"
 
 [[services]]
   protocol = "tcp"
@@ -34,4 +31,4 @@ kill_timeout = "5s"
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
-  memory_mb = 1024
+  memory_mb = 256
