@@ -19,9 +19,6 @@ kill_timeout = "5s"
   [[services.ports]]
     port = 443
     handlers = ["tls", "http"]
-  [services.concurrency]
-    hard_limit = 1
-    soft_limit = 1
 
   [[services.tcp_checks]]
     interval = "15s"
